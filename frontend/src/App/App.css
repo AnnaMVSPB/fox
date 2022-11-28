@@ -1,0 +1,21 @@
+body {
+  background: rgb(229, 0, 255);
+  background: linear-gradient(
+    297deg,
+    rgba(229, 0, 255, 1) 4%,
+    rgba(29, 231, 253, 1) 50%,
+    rgba(69, 252, 138, 1) 100%
+  );
+}
+
+.app__container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+}
+
+.app__title {
+  margin-top: 30px;
+  color: rgb(0, 0, 0);
+}

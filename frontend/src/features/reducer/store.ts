@@ -7,7 +7,7 @@ const store = createStore(
   combineReducers({
     adState: adReducer,
     userState: userReducer
-  }),composeWithDevTools()
+  }), composeWithDevTools()
 );
 
 export default store;

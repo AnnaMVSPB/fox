@@ -1,12 +1,10 @@
 import React, { useContext, useState } from 'react';
-import Card from '../CardList/types/Card';
 import './Form.css';
 import * as api from '../../App/api';
 import stateContext from '../reducer/context/context';
 
 function Form(): JSX.Element {
-
-  const {dispatch}=useContext(stateContext)
+  const { dispatch } = useContext(stateContext);
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [price, setPrice] = useState('');
@@ -18,7 +16,7 @@ function Form(): JSX.Element {
       description,
       price,
       img,
-    }).then(res=>dispatch({type:'ADD_AD',payload:res}))
+    }).then((res) => dispatch({ type: 'ADD_AD', payload: res }));
   };
   return (
     <div className="form__container">
